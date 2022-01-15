@@ -23,9 +23,28 @@ class EventsPage extends StatelessWidget{
                   primary: kPrimaryColor,
                 ),
               ),
+              Container(
+
+
+                child: Flexible(
+                  child: Text("Work Strike"
+                      "\nWorkers will will be striking to promote better working conditions"
+                      "\nLocation: Time Square"
+                      "\nDate: January 28, 2022",
+
+                    style: TextStyle(color: kPrimaryColor, fontSize: 33),),
+
+
+
+                ),
+
+              ),
+
             ],
           ),
-        )
+
+        ),
+
     );
   }
 }

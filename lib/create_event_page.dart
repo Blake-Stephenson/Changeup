@@ -112,7 +112,7 @@ class CreateEventPage extends StatelessWidget{
               height: 50,
               width: 250,
               decoration: BoxDecoration(
-                  color: kPrimaryColor, borderRadius: BorderRadius.circular(20)),
+                  color: kPrimaryColor, borderRadius: BorderRadius.circular(25)),
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/signin');

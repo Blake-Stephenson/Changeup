@@ -96,7 +96,7 @@ class SignInScreen extends StatelessWidget {
                                 border:
                                     Border.all(color: Colors.white.withOpacity(0.5)),
                               ),
-                              child: Icon(Icons.android,
+                              child: Icon(Icons.settings,
                                   color: Colors.white.withOpacity(0.5)),
                             ),
                             const SizedBox(width: 16),
