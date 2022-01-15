@@ -111,12 +111,24 @@ class SignInScreen extends StatelessWidget {
                                   color: Colors.white.withOpacity(0.5)),
                             ),
                             const Spacer(),
+
                             Container(
-                              padding: const EdgeInsets.all(16),
-                              decoration: const BoxDecoration(
-                                  shape: BoxShape.circle, color: kPrimaryColor),
-                              child: const Icon(Icons.arrow_forward, color: Colors.black,),
+                              child: FittedBox(
+                                child: GestureDetector(
+                                  onTap: () {Navigator.pushNamed(context, '/home');},
+
+                                  child:                             Container(
+                                    padding: const EdgeInsets.all(16),
+
+                                    decoration: const BoxDecoration(
+                                        shape: BoxShape.circle, color: kPrimaryColor),
+                                    child: const Icon(Icons.arrow_forward, color: Colors.black,),
+
+                                  ),
+                                ),
+                              ),
                             )
+
                           ],
                         ),
                       )

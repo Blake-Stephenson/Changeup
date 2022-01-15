@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
+import 'create_event_page.dart';
+import 'events_page.dart';
+import 'home_page.dart';
 import 'signin_screen.dart';
 import 'signup_screen.dart';
 import 'WelcomeScreen.dart';
@@ -36,6 +39,10 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder> {
         '/signin' : (context) => SignInScreen(),
         '/signup' : (context) => SignUpScreen(),
+        '/home' : (context) => HomePage(),
+        '/createevent' : (context) => CreateEventPage(),
+        '/events' : (context) => EventsPage(),
+
       }
     );
   }
