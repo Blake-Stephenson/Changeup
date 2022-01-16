@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget{
                   ),
                 ),
                 Padding(
-                    padding: EdgeInsets.all(50.0)
+                    padding: EdgeInsets.all(40.0)
                 ),
                 SizedBox(
                   width: 250,
@@ -70,7 +70,30 @@ class HomePage extends StatelessWidget{
                 ),
 
                 Padding(
-                    padding: EdgeInsets.all(50.0)
+                    padding: EdgeInsets.all(20.0)
+                ),
+                SizedBox(
+                  width: 250,
+                  height: 70,
+                  child: ElevatedButton(
+
+                    child: Text('Logout',
+                      style: Theme.of(context).textTheme.button!.copyWith(
+                          color: Colors.black, fontSize: 30
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/signin');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(35.0),),
+                      primary: kPrimaryColor,
+                    ),
+                  ),
+                ),
+
+                Padding(
+                    padding: EdgeInsets.all(40.0)
                 )
               ]
             )

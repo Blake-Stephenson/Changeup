@@ -139,7 +139,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                               email: _emailController.text,
                                               password:
                                                   _passwordController.text);
-                                      //Successful -> Add Navigation to HomePage
+                                      Navigator.pushNamed(context, '/signin');
 
                                     } catch (e) {
                                       final snackbar =
