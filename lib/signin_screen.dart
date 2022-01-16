@@ -138,7 +138,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                                 email: emailController.text,
                                                 password:
                                                     passwordController.text);
-                                    //Go to home page!!!
+                                    Navigator.pushNamed(context, '/home');
                                   } catch (e) {
                                     final snackbar =
                                         SnackBar(content: Text(e.toString()));

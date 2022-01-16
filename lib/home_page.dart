@@ -12,53 +12,65 @@ class HomePage extends StatelessWidget{
 
               children: <Widget>[
                 Expanded(
-                  flex: 3,
+                  flex: 2,
                   child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/person.png") as ImageProvider,
-                          fit: BoxFit.cover,
-                          alignment: Alignment.bottomCenter),
-                    ),
+                    color: kPrimaryColor,
+                    child: Center(
+                      child: Text(
+                        "Welcome to\nDisrupt",
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.headline4,
+                      ),
+                    )
                   ),
                 ),
                 Padding(
-                    padding: EdgeInsets.all(30.0)
+                    padding: EdgeInsets.all(50.0)
                 ),
-                ElevatedButton(
+                SizedBox(
+                  width: 250,
+                  height: 70,
+                  child: ElevatedButton(
 
-                  child: Text('View Events',
-                    style: Theme.of(context).textTheme.button!.copyWith(
-                      color: Colors.black, fontSize: 40
+                    child: Text('View Events',
+                      style: Theme.of(context).textTheme.button!.copyWith(
+                        color: Colors.black, fontSize: 30
+                      ),
                     ),
-                  ),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/events');
-                  },
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder( borderRadius: BorderRadius.circular(25.0),),
-                    primary: kPrimaryColor,
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/events');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder( borderRadius: BorderRadius.circular(35.0),),
+                      primary: kPrimaryColor,
+                    ),
                   ),
                 ),
                 Padding(
-                    padding: EdgeInsets.all(10.0)
+                    padding: EdgeInsets.all(20.0)
                 ),
-                ElevatedButton(
-                  child: Text('Create Event',
-                    style: Theme.of(context).textTheme.button!.copyWith(
-                      color: Colors.black, fontSize: 40
+                SizedBox(
+                  width: 250,
+                  height: 70,
+                  child: ElevatedButton(
+
+                    child: Text('Create Event',
+                      style: Theme.of(context).textTheme.button!.copyWith(
+                          color: Colors.black, fontSize: 30
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/createevent');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(35.0),),
+                      primary: kPrimaryColor,
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/createevent');
-                  },
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0),),
-                    primary: kPrimaryColor,
-                  ),
                 ),
+
                 Padding(
-                    padding: EdgeInsets.all(60.0)
+                    padding: EdgeInsets.all(50.0)
                 )
               ]
             )

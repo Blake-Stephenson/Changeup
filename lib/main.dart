@@ -48,6 +48,9 @@ class _MyAppState extends State<MyApp> {
                 color: kPrimaryColor,
                 fontWeight: FontWeight.bold,
                 fontSize: 14),
+            headline1: TextStyle(
+                color: kPrimaryColor,
+                fontSize: 15),
           ),
         ),
         home: const WelcomeScreen(),
@@ -56,6 +59,9 @@ class _MyAppState extends State<MyApp> {
         routes: <String, WidgetBuilder>{
           '/signin': (context) => SignInScreen(),
           '/signup': (context) => SignUpScreen(),
+          '/home' : (context) => HomePage(),
+          '/createevent' : (context) => CreateEventPage(),
+          '/events' : (context) => EventsPage(),
         });
   }
 }
