@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "397438587441",
+    "project_id": "disrupt-b9f25",
+    "storage_bucket": "disrupt-b9f25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397438587441:android:0eacf13a98f64a2ba1bb10",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397438587441-n524f2ng4ek3j17k7v4j6j256if886tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDczytmWrZdpriaKEsL4vDjXLAMTxuxxIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397438587441-n524f2ng4ek3j17k7v4j6j256if886tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
