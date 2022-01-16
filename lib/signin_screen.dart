@@ -30,7 +30,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 child: Container(
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/images/person.png")
+                        image: AssetImage("assets/images/signbg.jpg")
                             as ImageProvider,
                         fit: BoxFit.cover,
                         alignment: Alignment.bottomCenter),

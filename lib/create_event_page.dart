@@ -9,6 +9,8 @@ class CreateEventPage extends StatelessWidget{
       backgroundColor: kBackGroundColor,
 
       body: SingleChildScrollView(
+        child: Container(
+          margin: new EdgeInsets.fromLTRB(0, 35, 0, 0),
         child: Column(
           children: <Widget>[
             const Padding(
@@ -134,6 +136,7 @@ class CreateEventPage extends StatelessWidget{
             ),
 
           ],
+        ),
         ),
       ),
     );

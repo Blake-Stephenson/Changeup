@@ -12,11 +12,11 @@ class WelcomeScreen extends StatelessWidget {
         children: [
           
           Expanded(
-            flex: 6,
+            flex: 8,
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/images/person.png") as ImageProvider,
+                  image: AssetImage("assets/images/protest2.jpg") as ImageProvider,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -32,12 +32,12 @@ class WelcomeScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerLeft, 
                   child: Container(
-                    margin: new EdgeInsets.fromLTRB(20, 0, 0, 0),
+                    margin: new EdgeInsets.fromLTRB(20, 15, 0, 0),
                     child: RichText(
                       text: TextSpan(
                         children: [
-                          TextSpan(text: "DISRUPT\n", style: Theme.of(context).textTheme.headline4),
-                          TextSpan(text: "START A REVOLUTION", style: Theme.of(context).textTheme.headline6),
+                          
+                          TextSpan(text: "Let's Make a Change", style: TextStyle(color: Colors.white, fontSize: 23, fontWeight: FontWeight.normal,fontStyle: FontStyle.italic),),
                         ],
                       ),
                     ),
@@ -50,7 +50,7 @@ class WelcomeScreen extends StatelessWidget {
                     onTap: () {Navigator.pushNamed(context, '/signin');},
 
                     child: Container(
-                      margin: const EdgeInsets.only(bottom: 35),
+                      margin: const EdgeInsets.only(bottom: 25),
                       padding: const EdgeInsets.symmetric(
                           horizontal: 26, vertical: 16),
                       decoration: BoxDecoration(

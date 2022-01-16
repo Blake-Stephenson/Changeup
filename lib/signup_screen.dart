@@ -31,7 +31,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: Container(
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/images/person.png")
+                        image: AssetImage("assets/images/signbg.jpg")
                             as ImageProvider,
                         fit: BoxFit.cover,
                         alignment: Alignment.bottomCenter),
